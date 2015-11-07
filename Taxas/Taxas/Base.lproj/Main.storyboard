@@ -65,6 +65,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Idf-ZF-PkB"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DAH-us-MTd"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -83,6 +87,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="tabela" destination="GkZ-6w-oKS" id="f0e-Sl-ZtS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +135,9 @@
                                     <segment title="C"/>
                                     <segment title="D"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mudaTipo:" destination="SCI-yM-PCE" eventType="valueChanged" id="IZ1-gd-cQ4"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de agendamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK1-z4-7fO">
                                 <rect key="frame" x="20" y="239" width="168" height="21"/>
@@ -151,6 +161,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lblTaxa" destination="mm7-AN-8Eg" id="6op-3P-Xgn"/>
+                        <outlet property="lblValorTaxa" destination="kxk-ay-61s" id="KBX-3F-Iki"/>
+                        <outlet property="segTipo" destination="u8J-cx-eGB" id="jT0-g7-Acp"/>
+                        <outlet property="txtContaDestino" destination="dKf-Qz-p7t" id="ekJ-fc-LKp"/>
+                        <outlet property="txtContaOrigem" destination="NNE-WP-KDa" id="yrA-HE-ykW"/>
+                        <outlet property="txtDataAgendamento" destination="xCc-ru-q1m" id="2DP-Lx-qyB"/>
+                        <outlet property="txtValor" destination="hyg-5d-6iw" id="SQg-ZA-NVj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucp-iG-HEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,6 +238,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h3-2M-nRD">
                                 <rect key="frame" x="85" y="223" width="150" height="150"/>
                                 <state key="normal" title="Button" image="twitter"/>
+                                <connections>
+                                    <action selector="compartilharTwitter:" destination="2Rg-l2-AbL" eventType="touchUpInside" id="Kkr-Jj-4BA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compartilhar no Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaS-pJ-kEG">
                                 <rect key="frame" x="70" y="373" width="181" height="21"/>
@@ -231,6 +253,12 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lblData" destination="P5W-AU-Pex" id="3c9-7r-BTn"/>
+                        <outlet property="lblTaxa" destination="T98-jz-Hpo" id="2WQ-t2-2TD"/>
+                        <outlet property="lblTipo" destination="weU-Gt-8Fs" id="GTH-5G-LsM"/>
+                        <outlet property="lblValor" destination="ju2-RH-TkX" id="evk-Sw-CnX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Raj-uy-A9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

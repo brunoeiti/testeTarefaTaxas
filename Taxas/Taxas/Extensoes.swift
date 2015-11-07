@@ -33,6 +33,13 @@ extension NSDate{
         let str = f.stringFromDate(self)
         return str
     }
+    
+    func dateDiff(outraData:NSDate, unidade:NSCalendarUnit)->NSDateComponents{
+        let cal = NSCalendar.currentCalendar()
+        let components = cal.components(unidade, fromDate: self, toDate: outraData, options: NSCalendarOptions.MatchFirst)
+        return 0
+    }
+    
     static func fromString(dt:String, formato:String)->NSDate? {
         let f = NSDateFormatter()
         //deixa mes por extenso no formato portugues sempre
@@ -40,6 +47,8 @@ extension NSDate{
         f.dateFormat = formato
         return f.dateFromString(dt)
     }
+    
+    
     
 }
 

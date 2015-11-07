@@ -10,6 +10,17 @@ import UIKit
 
 class DetalhesViewController: UIViewController {
 
+    @IBOutlet weak var lblTipo: UILabel!
+    
+    @IBOutlet weak var lblValor: UILabel!
+    
+    @IBOutlet weak var lblTaxa: UILabel!
+    
+    @IBOutlet weak var lblData: UILabel!
+    
+    @IBAction func compartilharTwitter(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
