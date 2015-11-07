@@ -13,6 +13,12 @@
 		155087DB1BEE7E6100B3F9E6 /* Taxas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 155087D91BEE7E6100B3F9E6 /* Taxas.xcdatamodeld */; };
 		155087DD1BEE7E6100B3F9E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155087DC1BEE7E6100B3F9E6 /* Assets.xcassets */; };
 		155087E01BEE7E6100B3F9E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155087DE1BEE7E6100B3F9E6 /* LaunchScreen.storyboard */; };
+		155087E81BEE8EBC00B3F9E6 /* CadstroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087E71BEE8EBC00B3F9E6 /* CadstroViewController.swift */; };
+		155087EB1BEE8EED00B3F9E6 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087EA1BEE8EED00B3F9E6 /* DetalhesViewController.swift */; };
+		155087EE1BEE8F6800B3F9E6 /* Extensoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087ED1BEE8F6800B3F9E6 /* Extensoes.swift */; };
+		155087F01BEE8F8300B3F9E6 /* BancoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087EF1BEE8F8300B3F9E6 /* BancoHelper.swift */; };
+		155087F31BEE95A100B3F9E6 /* AgendamentoTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087F21BEE95A100B3F9E6 /* AgendamentoTO.swift */; };
+		155087F61BEE98DF00B3F9E6 /* AgendamentoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087F51BEE98DF00B3F9E6 /* AgendamentoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		155087DC1BEE7E6100B3F9E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155087DF1BEE7E6100B3F9E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155087E11BEE7E6100B3F9E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155087E71BEE8EBC00B3F9E6 /* CadstroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadstroViewController.swift; sourceTree = "<group>"; };
+		155087EA1BEE8EED00B3F9E6 /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
+		155087ED1BEE8F6800B3F9E6 /* Extensoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensoes.swift; sourceTree = "<group>"; };
+		155087EF1BEE8F8300B3F9E6 /* BancoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancoHelper.swift; sourceTree = "<group>"; };
+		155087F21BEE95A100B3F9E6 /* AgendamentoTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentoTO.swift; sourceTree = "<group>"; };
+		155087F51BEE98DF00B3F9E6 /* AgendamentoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +69,52 @@
 			isa = PBXGroup;
 			children = (
 				155087D21BEE7E6100B3F9E6 /* AppDelegate.swift */,
-				155087D41BEE7E6100B3F9E6 /* ViewController.swift */,
 				155087D61BEE7E6100B3F9E6 /* Main.storyboard */,
 				155087DC1BEE7E6100B3F9E6 /* Assets.xcassets */,
 				155087DE1BEE7E6100B3F9E6 /* LaunchScreen.storyboard */,
 				155087E11BEE7E6100B3F9E6 /* Info.plist */,
 				155087D91BEE7E6100B3F9E6 /* Taxas.xcdatamodeld */,
+				155087F41BEE98C400B3F9E6 /* Negocios */,
+				155087F11BEE958C00B3F9E6 /* Tipos */,
+				155087EC1BEE8EF200B3F9E6 /* Helpers */,
+				155087E91BEE8EC100B3F9E6 /* Telas */,
 			);
 			path = Taxas;
+			sourceTree = "<group>";
+		};
+		155087E91BEE8EC100B3F9E6 /* Telas */ = {
+			isa = PBXGroup;
+			children = (
+				155087D41BEE7E6100B3F9E6 /* ViewController.swift */,
+				155087E71BEE8EBC00B3F9E6 /* CadstroViewController.swift */,
+				155087EA1BEE8EED00B3F9E6 /* DetalhesViewController.swift */,
+			);
+			name = Telas;
+			sourceTree = "<group>";
+		};
+		155087EC1BEE8EF200B3F9E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				155087ED1BEE8F6800B3F9E6 /* Extensoes.swift */,
+				155087EF1BEE8F8300B3F9E6 /* BancoHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		155087F11BEE958C00B3F9E6 /* Tipos */ = {
+			isa = PBXGroup;
+			children = (
+				155087F21BEE95A100B3F9E6 /* AgendamentoTO.swift */,
+			);
+			name = Tipos;
+			sourceTree = "<group>";
+		};
+		155087F41BEE98C400B3F9E6 /* Negocios */ = {
+			isa = PBXGroup;
+			children = (
+				155087F51BEE98DF00B3F9E6 /* AgendamentoManager.swift */,
+			);
+			name = Negocios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155087F01BEE8F8300B3F9E6 /* BancoHelper.swift in Sources */,
 				155087D51BEE7E6100B3F9E6 /* ViewController.swift in Sources */,
+				155087E81BEE8EBC00B3F9E6 /* CadstroViewController.swift in Sources */,
+				155087EE1BEE8F6800B3F9E6 /* Extensoes.swift in Sources */,
+				155087F31BEE95A100B3F9E6 /* AgendamentoTO.swift in Sources */,
+				155087F61BEE98DF00B3F9E6 /* AgendamentoManager.swift in Sources */,
 				155087D31BEE7E6100B3F9E6 /* AppDelegate.swift in Sources */,
+				155087EB1BEE8EED00B3F9E6 /* DetalhesViewController.swift in Sources */,
 				155087DB1BEE7E6100B3F9E6 /* Taxas.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Taxas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.brunoeiti.Taxas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Taxas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.brunoeiti.Taxas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
