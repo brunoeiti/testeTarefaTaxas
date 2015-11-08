@@ -12,23 +12,37 @@ class AgendamentoManager: NSObject {
 
     
     func calcularTaxa(transf:AgendamentoTO)->NSDecimalNumber{
+        //evitar travamento em tentativas de calculos sem valor
+        if transf.valor==nil || transf.valor == NSDecimalNumber.notANumber(){
+            return 0
+        }
         
         switch transf.tipo!{
         case .A:
-            return 0
+            return calculaTaxaA(transf.valor!)
         case .B:
-            return 0
+            return calculaTaxaB(transf.valor!, data: transf.data!)
         case .C:
-            return 1
+            return calculaTaxaC(transf.valor!, data: transf.data!)
         case .D:
-            return 2
+            return calculaTaxaD(transf.valor!, data: transf.data!)
         }
     }
     func salvarAgendamento(transf:AgendamentoTO)->String?{
-        return ""
+        let difDias = NSDate().dateDiff(transf.data!, unidade: .Day).day
+        if difDias<0{
+            return "Data inválida"
+        }
+        if transf.valor==nil || transf.valor==NSDecimalNumber.notANumber(){
+            return "Valor inválido"
+        }
+        
+        BancoHelper.salvarAgendamento(transf)
+        
+        return nil
     }
     func listaAgendamentos()->[AgendamentoTO]{
-        return [AgendamentoTO]()
+        return BancoHelper.listarAgendamentos()
     }
     
     //MARK: Funcoes de calculo Taxa

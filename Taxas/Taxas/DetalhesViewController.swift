@@ -18,13 +18,38 @@ class DetalhesViewController: UIViewController {
     
     @IBOutlet weak var lblData: UILabel!
     
+    @IBOutlet weak var lblContas: UILabel!
+    
+    var agendamento:AgendamentoTO?
+    let agMan = AgendamentoManager()
+    var postado = false
+
     @IBAction func compartilharTwitter(sender: AnyObject) {
+        if postado{
+            UIAlertView(title: "Erro", message: "Esse agendamento já foi postado.", delegate: nil, cancelButtonTitle: "OK").show()
+            return;
+        }
+        
+        if let agendamento = agendamento{
+
+            let th = TwitterHelper()
+            th.postTweet("Agendei R$\(agendamento.valor!.getMonetarioString()!) para transferir em \(agendamento.data!.getString("dd/MM/yyyy")) da conta \(agendamento.contaOrigem!) para \(agendamento.contaDestino!) pelo tipo \(agendamento.tipo!.getString())")
+            postado = true
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let agendamento = agendamento{
+            
+            lblTipo.text = agendamento.tipo?.getString()
+            lblValor.text = agendamento.valor?.getMonetarioString()
+            lblTaxa.text = agMan.calcularTaxa(agendamento).getMonetarioString()
+            lblData.text = agendamento.data?.getString("dd/MM/yyyy")
+            lblContas.text = "\(agendamento.contaOrigem!) -> \(agendamento.contaDestino!)"
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

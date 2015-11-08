@@ -37,7 +37,7 @@ extension NSDate{
     func dateDiff(outraData:NSDate, unidade:NSCalendarUnit)->NSDateComponents{
         let cal = NSCalendar.currentCalendar()
         let components = cal.components(unidade, fromDate: self, toDate: outraData, options: NSCalendarOptions.MatchFirst)
-        return 0
+        return components
     }
     
     static func fromString(dt:String, formato:String)->NSDate? {
@@ -54,22 +54,26 @@ extension NSDate{
 
 // MARK: String
 
-extension String{
-    
 
-    func formatarMonetario()->String?{
-        let f = NSNumberFormatter()
-        f.locale = NSLocale(localeIdentifier: "pt-br")
-        f.numberStyle = NSNumberFormatterStyle.CurrencyStyle
-        let numero = NSDecimalNumber(string: self)
-        return f.stringFromNumber(numero)
-    }
-}
 
 
 
 // MARK: NSDecimalNumber
+
+
 extension NSDecimalNumber: Comparable {}
+
+extension NSDecimalNumber{
+    
+    func getMonetarioString()->String?{
+        let f = NSNumberFormatter()
+        f.locale = NSLocale(localeIdentifier: "pt-br")
+        f.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        
+        return f.stringFromNumber(self)
+    }
+    
+}
 
 public func ==(lhs: NSDecimalNumber, rhs: NSDecimalNumber) -> Bool {
     return lhs.compare(rhs) == .OrderedSame

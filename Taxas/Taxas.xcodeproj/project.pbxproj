@@ -13,12 +13,16 @@
 		155087DB1BEE7E6100B3F9E6 /* Taxas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 155087D91BEE7E6100B3F9E6 /* Taxas.xcdatamodeld */; };
 		155087DD1BEE7E6100B3F9E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155087DC1BEE7E6100B3F9E6 /* Assets.xcassets */; };
 		155087E01BEE7E6100B3F9E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155087DE1BEE7E6100B3F9E6 /* LaunchScreen.storyboard */; };
-		155087E81BEE8EBC00B3F9E6 /* CadstroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087E71BEE8EBC00B3F9E6 /* CadstroViewController.swift */; };
+		155087E81BEE8EBC00B3F9E6 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087E71BEE8EBC00B3F9E6 /* CadastroViewController.swift */; };
 		155087EB1BEE8EED00B3F9E6 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087EA1BEE8EED00B3F9E6 /* DetalhesViewController.swift */; };
 		155087EE1BEE8F6800B3F9E6 /* Extensoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087ED1BEE8F6800B3F9E6 /* Extensoes.swift */; };
 		155087F01BEE8F8300B3F9E6 /* BancoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087EF1BEE8F8300B3F9E6 /* BancoHelper.swift */; };
 		155087F31BEE95A100B3F9E6 /* AgendamentoTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087F21BEE95A100B3F9E6 /* AgendamentoTO.swift */; };
 		155087F61BEE98DF00B3F9E6 /* AgendamentoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155087F51BEE98DF00B3F9E6 /* AgendamentoManager.swift */; };
+		155087FA1BEEDAB700B3F9E6 /* VMaskTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 155087F91BEEDAB600B3F9E6 /* VMaskTextField.m */; };
+		155088001BEEFC8300B3F9E6 /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 155087FD1BEEFC8300B3F9E6 /* FHSStream.m */; };
+		155088011BEEFC8300B3F9E6 /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 155087FF1BEEFC8300B3F9E6 /* FHSTwitterEngine.m */; };
+		155088041BEEFD5400B3F9E6 /* TwitterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155088031BEEFD5400B3F9E6 /* TwitterHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +34,20 @@
 		155087DC1BEE7E6100B3F9E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155087DF1BEE7E6100B3F9E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155087E11BEE7E6100B3F9E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		155087E71BEE8EBC00B3F9E6 /* CadstroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadstroViewController.swift; sourceTree = "<group>"; };
+		155087E71BEE8EBC00B3F9E6 /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		155087EA1BEE8EED00B3F9E6 /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		155087ED1BEE8F6800B3F9E6 /* Extensoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensoes.swift; sourceTree = "<group>"; };
 		155087EF1BEE8F8300B3F9E6 /* BancoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BancoHelper.swift; sourceTree = "<group>"; };
 		155087F21BEE95A100B3F9E6 /* AgendamentoTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentoTO.swift; sourceTree = "<group>"; };
 		155087F51BEE98DF00B3F9E6 /* AgendamentoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentoManager.swift; sourceTree = "<group>"; };
+		155087F71BEEDAB600B3F9E6 /* Taxas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Taxas-Bridging-Header.h"; sourceTree = "<group>"; };
+		155087F81BEEDAB600B3F9E6 /* VMaskTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMaskTextField.h; sourceTree = "<group>"; };
+		155087F91BEEDAB600B3F9E6 /* VMaskTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMaskTextField.m; sourceTree = "<group>"; };
+		155087FC1BEEFC8300B3F9E6 /* FHSStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
+		155087FD1BEEFC8300B3F9E6 /* FHSStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
+		155087FE1BEEFC8300B3F9E6 /* FHSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
+		155087FF1BEEFC8300B3F9E6 /* FHSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
+		155088031BEEFD5400B3F9E6 /* TwitterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 		155087D11BEE7E6100B3F9E6 /* Taxas */ = {
 			isa = PBXGroup;
 			children = (
+				155088021BEEFC8600B3F9E6 /* Externos */,
 				155087D21BEE7E6100B3F9E6 /* AppDelegate.swift */,
 				155087D61BEE7E6100B3F9E6 /* Main.storyboard */,
 				155087DC1BEE7E6100B3F9E6 /* Assets.xcassets */,
@@ -86,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				155087D41BEE7E6100B3F9E6 /* ViewController.swift */,
-				155087E71BEE8EBC00B3F9E6 /* CadstroViewController.swift */,
+				155087E71BEE8EBC00B3F9E6 /* CadastroViewController.swift */,
 				155087EA1BEE8EED00B3F9E6 /* DetalhesViewController.swift */,
 			);
 			name = Telas;
@@ -97,6 +110,8 @@
 			children = (
 				155087ED1BEE8F6800B3F9E6 /* Extensoes.swift */,
 				155087EF1BEE8F8300B3F9E6 /* BancoHelper.swift */,
+				155087F71BEEDAB600B3F9E6 /* Taxas-Bridging-Header.h */,
+				155088031BEEFD5400B3F9E6 /* TwitterHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -115,6 +130,27 @@
 				155087F51BEE98DF00B3F9E6 /* AgendamentoManager.swift */,
 			);
 			name = Negocios;
+			sourceTree = "<group>";
+		};
+		155087FB1BEEFC8300B3F9E6 /* FHSTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				155087FC1BEEFC8300B3F9E6 /* FHSStream.h */,
+				155087FD1BEEFC8300B3F9E6 /* FHSStream.m */,
+				155087FE1BEEFC8300B3F9E6 /* FHSTwitterEngine.h */,
+				155087FF1BEEFC8300B3F9E6 /* FHSTwitterEngine.m */,
+			);
+			path = FHSTwitterEngine;
+			sourceTree = "<group>";
+		};
+		155088021BEEFC8600B3F9E6 /* Externos */ = {
+			isa = PBXGroup;
+			children = (
+				155087F81BEEDAB600B3F9E6 /* VMaskTextField.h */,
+				155087F91BEEDAB600B3F9E6 /* VMaskTextField.m */,
+				155087FB1BEEFC8300B3F9E6 /* FHSTwitterEngine */,
+			);
+			name = Externos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155087FA1BEEDAB700B3F9E6 /* VMaskTextField.m in Sources */,
 				155087F01BEE8F8300B3F9E6 /* BancoHelper.swift in Sources */,
 				155087D51BEE7E6100B3F9E6 /* ViewController.swift in Sources */,
-				155087E81BEE8EBC00B3F9E6 /* CadstroViewController.swift in Sources */,
+				155087E81BEE8EBC00B3F9E6 /* CadastroViewController.swift in Sources */,
 				155087EE1BEE8F6800B3F9E6 /* Extensoes.swift in Sources */,
+				155088001BEEFC8300B3F9E6 /* FHSStream.m in Sources */,
 				155087F31BEE95A100B3F9E6 /* AgendamentoTO.swift in Sources */,
+				155088011BEEFC8300B3F9E6 /* FHSTwitterEngine.m in Sources */,
+				155088041BEEFD5400B3F9E6 /* TwitterHelper.swift in Sources */,
 				155087F61BEE98DF00B3F9E6 /* AgendamentoManager.swift in Sources */,
 				155087D31BEE7E6100B3F9E6 /* AppDelegate.swift in Sources */,
 				155087EB1BEE8EED00B3F9E6 /* DetalhesViewController.swift in Sources */,
@@ -307,11 +347,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Taxas/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.brunoeiti.Taxas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Taxas/Taxas-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -319,11 +362,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Taxas/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.brunoeiti.Taxas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Taxas/Taxas-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -346,6 +391,7 @@
 				155087E61BEE7E6100B3F9E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

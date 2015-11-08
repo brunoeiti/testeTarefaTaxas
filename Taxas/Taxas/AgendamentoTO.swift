@@ -8,11 +8,23 @@
 
 import Foundation
 
-enum AgendamentoTipo{
-    case A
-    case B
-    case C
-    case D
+enum AgendamentoTipo:Int{
+    case A = 0
+    case B = 1
+    case C = 2
+    case D = 3
+    func getString()->String{
+        switch self{
+        case .A:
+            return "A"
+        case .B:
+            return "B"
+        case .C:
+            return "C"
+        default:
+            return "D"
+        }
+    }
 }
 class AgendamentoTO: NSObject {
     
