@@ -53,7 +53,6 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         if let resultado = resultado{
             UIAlertView(title: "Erro", message: resultado, delegate: self, cancelButtonTitle: "OK").show()
         }else{
-            UIAlertView(title: "Sucesso", message: "Agendamento Salvo", delegate: self, cancelButtonTitle: "OK").show()
             self.navigationController?.popViewControllerAnimated(true)
         }
     }
